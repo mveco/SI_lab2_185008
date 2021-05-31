@@ -1,11 +1,11 @@
 1. КОДОТ
 
-import java.util.ArrayList;
-import java.util.List;
-class Time {
-    int hours;
-    int minutes;
-    int seconds;
+import java.util.ArrayList;\
+import java.util.List;\
+class Time {\
+    int hours;\
+    int minutes;\
+    int seconds;\
 
     public Time(int hours, int minutes, int seconds) {
         this.hours = hours;
@@ -72,33 +72,33 @@ public class SILab2 {
 1) Со броење на региони = 8
 2) Со темиња на поделба 7+1=8
 
-4. Multiple condition: Сите сложени if-услови
-4 if (hr < 0 || hr > 24)
-	(-1, 5, 5) = TX
-	(30, 5, 5) = FT
-	(5, 5, 5) = FF
-5.1 if (min < 0 || min > 59)
-	(5, -1, 5) = TX
-	(5, 60, 5) = FT
-	(5, 5, 5) = FF
-5.1.2 if (sec >= 0 && sec <= 59)
-	(5, 5, -1) = FX
-	(5, 5, 60) = TF
-	(5, 5, 5) = TT
-6 else if (hr == 24 && min == 0 && sec == 0)
-	(5, 5, 5) = FXX
-	(24, 5, 5) = TFX
-	(24, 0, 5) = TTF
-	(24, 0, 0) = TTT
+4. Multiple condition: Сите сложени if-услови\
+4 if (hr < 0 || hr > 24)\
+	(-1, 5, 5) = TX\
+	(30, 5, 5) = FT\
+	(5, 5, 5) = FF\
+5.1 if (min < 0 || min > 59)\
+	(5, -1, 5) = TX\
+	(5, 60, 5) = FT\
+	(5, 5, 5) = FF\
+5.1.2 if (sec >= 0 && sec <= 59)\
+	(5, 5, -1) = FX\
+	(5, 5, 60) = TF\
+	(5, 5, 5) = TT\
+6 else if (hr == 24 && min == 0 && sec == 0)\
+	(5, 5, 5) = FXX\
+	(24, 5, 5) = TFX\
+	(24, 0, 5) = TTF\
+	(24, 0, 0) = TTT\
 
-5. Every branch: Да се опфатат сите ребра во графот
-Влезови:
-(-1, 5, 5)
-(30, 5, 5)
-(5, -1, 5)
-(5, 5, -1)
-(5, 5, 5)
-(24, 0, 5)
-(24, 0, 0)
+5. Every branch: Да се опфатат сите ребра во графот\
+Влезови:\
+(-1, 5, 5)\
+(30, 5, 5)\
+(5, -1, 5)\
+(5, 5, -1)\
+(5, 5, 5)\
+(24, 0, 5)\
+(24, 0, 0)\
 ![TABLE](./every_branch.png)
 
