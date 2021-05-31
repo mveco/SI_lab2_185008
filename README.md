@@ -1,7 +1,7 @@
 1. КОДОТ
+
 import java.util.ArrayList;
 import java.util.List;
-
 class Time {
     int hours;
     int minutes;
@@ -64,6 +64,7 @@ public class SILab2 {
     }
 }//10 - крај
 
+
 2. Control Flow Graph
 ![GRAPH](./flow_graph.png)
 
@@ -72,19 +73,19 @@ public class SILab2 {
 2) Со темиња на поделба 7+1=8
 
 4. Multiple condition: Сите сложени if-услови
-4) if (hr < 0 || hr > 24)
+4 if (hr < 0 || hr > 24)
 	(-1, 5, 5) = TX
 	(30, 5, 5) = FT
 	(5, 5, 5) = FF
-5.1) if (min < 0 || min > 59)
+5.1 if (min < 0 || min > 59)
 	(5, -1, 5) = TX
 	(5, 60, 5) = FT
 	(5, 5, 5) = FF
-5.1.2) if (sec >= 0 && sec <= 59)
+5.1.2 if (sec >= 0 && sec <= 59)
 	(5, 5, -1) = FX
 	(5, 5, 60) = TF
 	(5, 5, 5) = TT
-6) else if (hr == 24 && min == 0 && sec == 0)
+6 else if (hr == 24 && min == 0 && sec == 0)
 	(5, 5, 5) = FXX
 	(24, 5, 5) = TFX
 	(24, 0, 5) = TTF
@@ -100,6 +101,4 @@ public class SILab2 {
 (24, 0, 5)
 (24, 0, 0)
 ![TABLE](./every_branch.png)
-
-
 
